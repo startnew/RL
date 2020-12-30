@@ -1,4 +1,11 @@
-# FindGem
+# FindGem_v1 Use DQN net 
+
+  FindGem_v1 is a game that the robot walks in a two-dimensional maze. There are fire pits, stone pillars, and diamonds in the maze. If the robot falls into the fire pit, the game is over. If you find diamonds, you can get rewards and the game is over! Design the best strategy to let the robot find the diamond as soon as possible and get rewards.
+  
+  Every time the environment is reset, it will only change the position of the robot and not the positions of gems, fire pits, and stone pillars
+  
+  
+
 
 ----
 # Result Show
@@ -17,6 +24,7 @@
  
 ## gym Env set up
    FindGem's Env setting Reference from [this link](https://blog.csdn.net/extremebingo/article/details/80867486)
+   Based on the original author, made appropriate bug fixes and robot move position modifications
    
    1. First move Custom env code move to  your site-package gym path ``.../anaconda3/Lib/site-packages/gym/envs``
    ```shell
@@ -26,7 +34,7 @@
 ```
    
    2.  Registration environment in gym
-      open .../anaconda3/Lib/site-packages/gym/envs/__init__.py add the following piece of code
+      open ``.../anaconda3/Lib/site-packages/gym/envs/__init__.py`` add the following   code
    ```python 
     register(
     id='GridWorld-v1',
@@ -35,6 +43,26 @@
     reward_threshold=100,
     )
 ```
+    
+## Train Model
+
+  DQN model reference from [pytorch official tutorials](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
+  train process result save reference from [tensorflow org tutorials](https://www.tensorflow.org/agents/tutorials/1_dqn_tutorial)
+  and Modify the reward mechanism, increase with the number of steps, reduce rewards, and update status acquisition
+        
+  ```shell
+    python customEnvFindGem.py --mode train --BATCH_SIZE 256  --num_episodes 50000 
+  ```
+   [model file ](./model/target_net.model)
+
+## Test model
+  ```shell 
+    python customEnvFindGem.py --mode test 
+  ```
+  [result_mp4](./result/result_polyDL.mp4)
+  
+ 
+
 
 
    
