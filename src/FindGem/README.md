@@ -25,6 +25,9 @@
 ## gym Env set up
    FindGem's Env setting Reference from [this link](https://blog.csdn.net/extremebingo/article/details/80867486)
    Based on the original author, made appropriate bug fixes and robot move position modifications
+   ```bash
+pip install -r requirements.txt
+```
    
    1. First move Custom env code move to  your site-package gym path ``.../anaconda3/Lib/site-packages/gym/envs``
    ```shell
@@ -44,6 +47,7 @@
     )
 ```
     
+    
 ## Train Model
 
   DQN model reference from [pytorch official tutorials](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
@@ -59,6 +63,7 @@
   ```shell 
     python customEnvFindGem.py --mode test 
   ```
+  result file will save at ``./result/result_polyDL.mp4``
   [result_mp4](./result/result_polyDL.mp4)
   
  
