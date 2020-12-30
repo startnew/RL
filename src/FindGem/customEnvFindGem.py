@@ -27,7 +27,13 @@ from tqdm import tqdm
 from collections import namedtuple
 from itertools import count
 from PIL import Image, ImageDraw
-from util.ImageVedioProcess import embed_mp4
+import sys
+try:
+    from util.ImageVedioProcess import embed_mp4
+except:
+    sys.path.append("../../")
+    from util.ImageVedioProcess import embed_mp4
+
 
 import torch
 import torch.nn as nn
@@ -287,7 +293,7 @@ if __name__ == "__main__":
 
     args = parseArgs()
     BATCH_SIZE = args.BATCH_SIZE
-    is_train = args.train == "train"
+    is_train = args.mode == "train"
     fps = args.fps
 
     num_episodes = args.num_episodes
