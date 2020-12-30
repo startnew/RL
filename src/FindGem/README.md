@@ -13,15 +13,15 @@
 ## gym Env set up
    FindGem's Env setting Reference from [this link](https://blog.csdn.net/extremebingo/article/details/80867486)
    
-   1. First move Custom env code move to  your site-package gym path ``...\anaconda3\Lib\site-packages\gym\envs``
+   1. First move Custom env code move to  your site-package gym path ``.../anaconda3/Lib/site-packages/gym/envs``
    ```shell
-   mkdir ..\anaconda3\Lib\site-packages\gym\envs\usr
-   cp ./env/grid_findGem_v1.py \anaconda3\Lib\site-packages\gym\envs\usr
-   cp ./env/__init__.py \anaconda3\Lib\site-packages\gym\envs\usr
+   mkdir ../anaconda3/Lib/site-packages/gym/envs/usr
+   cp ./env/grid_findGem_v1.py /anaconda3/Lib/site-packages/gym/envs/usr
+   cp ./env/__init__.py /anaconda3/Lib/site-packages/gym/envs/usr
 ```
    
    2.  Registration environment in gym
-      open ...\anaconda3\Lib\site-packages\gym\envs\__init__.py add the following piece of code
+      open .../anaconda3/Lib/site-packages/gym/envs/__init__.py add the following piece of code
    ```python 
     register(
     id='GridWorld-v1',
