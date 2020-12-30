@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52154616-0c1f-4ffd-9113-b7cbc5728773" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FindGem/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem/customEnvFindGem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem/env/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem/env/grid_findGem_v1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem/model/target_net.model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem/result/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem/result/result_polyDL.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/ImageVedioProcess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FindGem/result/result_polyDL.mp4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FindGem/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindGem/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/ImageVedioProcess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="529">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding>
                 <element signature="e#232#245#0" expanded="true" />
               </folding>
@@ -56,8 +51,8 @@
         <entry file="file://$PROJECT_DIR$/src/FindGem/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="552">
-                <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <first_editor relative-caret-position="299">
+                <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -73,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/FindGem/result/result.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret lean-forward="true" selection-end-line="4" selection-end-column="10" />
+              <caret selection-end-line="4" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -86,6 +81,14 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>\</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -172,8 +175,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace\2020\RL\src\FindGem\env" />
       <recent name="D:\workspace\2020\RL\src\FindGem\result" />
+      <recent name="D:\workspace\2020\RL\src\FindGem\env" />
       <recent name="D:\workspace\2020\RL\src\FindGem\model" />
     </key>
   </component>
@@ -200,12 +203,20 @@
       <option name="presentableId" value="Default" />
       <updated>1609291330379</updated>
       <workItem from="1609291332138" duration="361000" />
-      <workItem from="1609292402809" duration="4034000" />
+      <workItem from="1609292402809" duration="4897000" />
     </task>
+    <task id="LOCAL-00001" summary="修改反斜杠">
+      <created>1609306748716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609306748717</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4395000" />
+    <option name="totallyTimeSpent" value="5258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
@@ -238,16 +249,20 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改反斜杠" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改反斜杠" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/FindGem/customEnvFindGem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FindGem/env/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FindGem/result/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FindGem/env/grid_findGem_v1.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -259,28 +274,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FindGem/result/result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/ImageVedioProcess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="529">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding>
             <element signature="e#232#245#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/FindGem/customEnvFindGem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FindGem/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="552">
-            <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <first_editor relative-caret-position="299">
+            <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
