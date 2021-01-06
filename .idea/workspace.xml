@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52154616-0c1f-4ffd-9113-b7cbc5728773" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FindGem_v2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem_v2/customEnvFindGemV2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem_v2/env/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem_v2/model/target_net.model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem_v2/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem_v2/result/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem_v2/result/result_polyDL.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindGem_v2/result/result_polyDL.mp4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FindGem_v2/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FindGem/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindGem/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FindGem/env/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindGem/env/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FindGem/result/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindGem/result/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FindGem/result/result_polyDL.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindGem/result/result_polyDL.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FindGem/result/result_polyDL.mp4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindGem/result/result_polyDL.mp4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FindGem_v2/result/result_polyDL.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindGem_v2/result/result_polyDL.mp4" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,20 +14,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/RL$test.coverage" NAME="test Coverage Results" MODIFIED="1609916002292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/FindGem_v2" />
     <SUITE FILE_PATH="coverage/RL$grid_findGem_v2.coverage" NAME="grid_findGem_v2 Coverage Results" MODIFIED="1609813022333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/FindGem_v2/env" />
-    <SUITE FILE_PATH="coverage/RL$customEnvFindGemV2.coverage" NAME="customEnvFindGemV2 Coverage Results" MODIFIED="1609895354271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/FindGem_v2" />
+    <SUITE FILE_PATH="coverage/RL$customEnvFindGemV2.coverage" NAME="customEnvFindGemV2 Coverage Results" MODIFIED="1609920475878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/FindGem_v2" />
     <SUITE FILE_PATH="coverage/RL$customEnvFindGem.coverage" NAME="customEnvFindGem Coverage Results" MODIFIED="1609813943721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/FindGem" />
     <SUITE FILE_PATH="coverage/RL$_distributor_init.coverage" NAME="_distributor_init Coverage Results" MODIFIED="1609400692266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/anaconda3_201907/Lib/site-packages/numpy" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="355" selection-start-line="355" selection-end-line="355" />
+            <state relative-caret-position="179">
+              <caret line="314" lean-forward="true" selection-start-line="314" selection-end-line="314" />
               <folding>
-                <element signature="e#6862#11090#0" />
+                <element signature="e#288#302#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,11 +49,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/gym/envs/user/grid_findGem_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" lean-forward="true" selection-end-line="355" />
+            <state relative-caret-position="458">
+              <caret line="254" lean-forward="true" selection-end-line="363" />
               <folding>
-                <element signature="e#6934#11031#0" />
+                <element signature="e#287#301#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/gym/envs/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="104" column="32" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FindGem_v2/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="121">
+                <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -78,31 +89,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FindGem_v2/env/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/gym/envs/classic_control/rendering.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="365" column="52" selection-start-line="365" selection-start-column="52" selection-end-line="365" selection-end-column="52" />
-              <folding>
-                <element signature="e#31#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FindGem_v2/customEnvFindGemV2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="298" column="53" lean-forward="true" selection-start-line="298" selection-start-column="53" selection-end-line="298" selection-end-column="53" />
+            <state relative-caret-position="168">
+              <caret line="322" lean-forward="true" selection-start-line="322" selection-end-line="322" />
               <folding>
                 <element signature="e#397#406#0" expanded="true" />
               </folding>
@@ -124,6 +114,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
               <caret line="419" selection-start-line="419" selection-end-line="419" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FindGem_v2/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -158,9 +157,10 @@
       <find>cuda</find>
       <find>CUDA</find>
       <find>batch</find>
-      <find>time.sl</find>
-      <find>if i &lt;  self</find>
       <find>loss:</find>
+      <find>if i &lt;  self</find>
+      <find>time.sl</find>
+      <find>robotrans</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -181,15 +181,17 @@
         <option value="$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v1.py" />
         <option value="$PROJECT_DIR$/src/FindGem_v2/env/__init__.py" />
         <option value="$PROJECT_DIR$/src/FindGem/env/__init__.py" />
+        <option value="$PROJECT_DIR$/src/FindGem_v2/customEnvFindGemV2.py" />
+        <option value="$PROJECT_DIR$/src/FindGem_v2/README.md" />
+        <option value="$PROJECT_DIR$/src/FindGem_v2/test.py" />
         <option value="$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/gym/envs/user/grid_findGem_v2.py" />
         <option value="$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v2.py" />
-        <option value="$PROJECT_DIR$/src/FindGem_v2/customEnvFindGemV2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="29" />
+    <option name="y" value="134" />
     <option name="width" value="1936" />
     <option name="height" value="1065" />
   </component>
@@ -365,9 +367,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/FindGem_v2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/FindGem_v2/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.customEnvFindGemV2" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.customEnvFindGem" />
         <item itemvalue="Python.grid_findGem_v2" />
         <item itemvalue="Python._distributor_init" />
@@ -388,7 +413,7 @@
       <workItem from="1609292402809" duration="24044000" />
       <workItem from="1609745726094" duration="11176000" />
       <workItem from="1609813823256" duration="215000" />
-      <workItem from="1609814193064" duration="20444000" />
+      <workItem from="1609814193064" duration="27460000" />
     </task>
     <task id="LOCAL-00001" summary="修改反斜杠">
       <created>1609306748716</created>
@@ -432,22 +457,28 @@
       <option name="project" value="LOCAL" />
       <updated>1609313142731</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="findGem_v2FirstCommit">
+      <created>1609898916305</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609898916305</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56025000" />
+    <option name="totallyTimeSpent" value="63041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4038668" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.10311493" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -456,7 +487,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.20837809" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.24919441" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -475,7 +506,8 @@
     <MESSAGE value="modify requirements" />
     <MESSAGE value="add FindGem Version 1 to ReadMe 加入寻找宝石的第一版本到Readme" />
     <MESSAGE value="test code run and modify some error" />
-    <option name="LAST_COMMIT_MESSAGE" value="test code run and modify some error" />
+    <MESSAGE value="findGem_v2FirstCommit" />
+    <option name="LAST_COMMIT_MESSAGE" value="findGem_v2FirstCommit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/anaconda3_201907/Lib/site-packages/numpy/_distributor_init.py">
@@ -490,16 +522,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="757">
             <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="115">
-            <caret line="5" selection-start-line="5" selection-end-line="5" />
           </first_editor>
           <second_editor />
         </state>
@@ -577,40 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FindGem_v2/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1278">
-            <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pyglet/gl/gl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="246" column="38" selection-start-line="246" selection-start-column="38" selection-end-line="246" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/gym/envs/user/grid_findGem_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" lean-forward="true" selection-end-line="355" />
-          <folding>
-            <element signature="e#6934#11031#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="355" selection-start-line="355" selection-end-line="355" />
-          <folding>
-            <element signature="e#6862#11090#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -624,12 +616,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="115">
+            <caret line="5" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FindGem_v2/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="121">
+            <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/gym/envs/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="104" column="32" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FindGem_v2/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FindGem_v2/customEnvFindGemV2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="298" column="53" lean-forward="true" selection-start-line="298" selection-start-column="53" selection-end-line="298" selection-end-column="53" />
+        <state relative-caret-position="168">
+          <caret line="322" lean-forward="true" selection-start-line="322" selection-end-line="322" />
           <folding>
             <element signature="e#397#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/gym/envs/user/grid_findGem_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="254" lean-forward="true" selection-end-line="363" />
+          <folding>
+            <element signature="e#287#301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="314" lean-forward="true" selection-start-line="314" selection-end-line="314" />
+          <folding>
+            <element signature="e#288#302#0" expanded="true" />
           </folding>
         </state>
       </provider>

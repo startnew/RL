@@ -117,7 +117,7 @@ class GridEnv2(gym.Env):
                 if i > 0:
                     loc_indexs_n = loc_index - self.col
                     self.t_["{}_{}".format(loc_index + 1, "n")] = loc_indexs_n
-                if i <  self.row -1:
+                if i < self.row - 1:
                     loc_indexs_s = loc_index + self.col
                     self.t_["{}_{}".format(loc_index + 1, "s")] = loc_indexs_s
                 if j > 0:
@@ -151,7 +151,7 @@ class GridEnv2(gym.Env):
                 continue
             elif v_ > self.stone_id:
                 self.t[k_n] = v_ - 1
-        #print("状态转移:",self.t)
+        # print("状态转移:",self.t)
 
     def gen_rewards(self):
         self.rewards = dict();  # 回报的数据结构为字典
@@ -211,7 +211,7 @@ class GridEnv2(gym.Env):
         return next_state, r, is_terminal, {}
 
     def reset(self):
-        self.hole_ids = random.choices(self.states,k=2)  # 编号 从1 开始
+        self.hole_ids = random.choices(self.states, k=2)  # 编号 从1 开始
         # [11, 12]
         res = list(set(self.states) - set(self.hole_ids))
         self.gem_ids = [random.choice(res)]  # 编号 从1 开始
@@ -219,18 +219,16 @@ class GridEnv2(gym.Env):
         self.stone_id = random.choice(res)
         res = list(set(res) - set([self.stone_id]))
         self.terminate_states = dict()
-        for id_ in self.hole_ids + self.gem_ids :
+        for id_ in self.hole_ids + self.gem_ids:
             self.terminate_states[id_] = 1
         self.state = random.choice(res)  # self.states[int(random.random() * len(self.states))]
 
-
-
         self.gen_t()
         self.gen_rewards()
-        self.reset_=True
-        #if self.viewer:
-            #print(help(self.viewer))
-            #self.viewer.clear()
+        self.reset_ = True
+        # if self.viewer:
+        # print(help(self.viewer))
+        # self.viewer.clear()
         return self.state
 
     def render(self, mode='human'):
@@ -238,16 +236,9 @@ class GridEnv2(gym.Env):
         screen_width = 600
         screen_height = 600
 
-        if self.viewer is None or  self.reset_:
-            if self.reset_ and self.viewer:
-                #rendering.glClear(self.fire1)
-                #rendering.glClearAccum
-                self.viewer.close()
-            # else:
-            self.viewer = rendering.Viewer(screen_width, screen_height)
-
-
-
+        if self.viewer is None:
+            if not self.viewer:
+                self.viewer = rendering.Viewer(screen_width, screen_height)
             # 创建网格世界
             self.line1 = rendering.Line((100, 100), (500, 100))
             self.line2 = rendering.Line((100, 200), (500, 200))
@@ -262,44 +253,26 @@ class GridEnv2(gym.Env):
 
             # 创建石柱
             self.shizhu = rendering.make_circle(40)
-            #self.shizhu.set_translation(self.x[self.stone_id[-1]], self.y[self.stone_id[-1]])
-            inf = (self.x[self.stone_id-1], self.y[self.stone_id-1])
-            #print("shizhu",inf,self.stone_id,self.hole_ids,)
-            self.circletrans = rendering.Transform(translation=inf)
-            self.shizhu.add_attr(self.circletrans)
+            self.shizhutrans = rendering.Transform()
+            self.shizhu.add_attr(self.shizhutrans)
             self.shizhu.set_color(0.8, 0.6, 0.4)
 
             # 创建第一个火坑
             self.fire1 = rendering.make_circle(40)
-            if self.hole_ids[0] <= self.stone_id - 1:
-                inf = (self.x[self.hole_ids[0] - 1], self.y[self.hole_ids[0] - 1])
-            else:
-                inf = (self.x[self.hole_ids[0]], self.y[self.hole_ids[0]])
-            #print("fire1",inf)
-            fire_inf = inf
-            self.circletrans = rendering.Transform(fire_inf)#(450, 250)
-            self.fire1.add_attr(self.circletrans)
+            self.fire1trans = rendering.Transform()  # (450, 250)
+            self.fire1.add_attr(self.fire1trans)
             self.fire1.set_color(1, 0, 0)
 
             # 创建第二个火坑
             self.fire2 = rendering.make_circle(40)
-            if self.hole_ids[1] <= self.stone_id - 1:
-                inf =(self.x[self.hole_ids[1] - 1], self.y[self.hole_ids[1] - 1])
-            else:
-                inf =(self.x[self.hole_ids[1]], self.y[self.hole_ids[1]])
-            #print("fire2", inf)
-            self.circletrans = rendering.Transform(translation=inf)#(150, 150)
-            self.fire2.add_attr(self.circletrans)
+            self.fire2trans = rendering.Transform()  # (150, 150)
+            self.fire2.add_attr(self.fire2trans)
             self.fire2.set_color(1, 0, 0)
 
             # 创建宝石
             self.diamond = rendering.make_circle(40)
-            if self.gem_ids[0] <= self.stone_id - 1:
-                inf =(self.x[self.gem_ids[0] - 1], self.y[self.gem_ids[0] - 1])
-            else:
-                inf =(self.x[self.gem_ids[0]], self.y[self.gem_ids[0]])
-            self.circletrans = rendering.Transform(translation=inf)#(450, 150)
-            self.diamond.add_attr(self.circletrans)
+            self.diamondtrans = rendering.Transform()  # (450, 150)
+            self.diamond.add_attr(self.diamondtrans)
             self.diamond.set_color(0, 0, 1)
 
             # 创建机器人
@@ -334,12 +307,39 @@ class GridEnv2(gym.Env):
             self.viewer.add_geom(self.fire2)
             self.viewer.add_geom(self.diamond)
             self.viewer.add_geom(self.robot)
-            self.reset_ = False
+            self.reset_ = True
+
+        if self.reset_:
+            shizhuinf = (self.x[self.stone_id - 1], self.y[self.stone_id - 1])
+            self.shizhutrans.set_translation(shizhuinf[0], shizhuinf[1])
+
+            if self.hole_ids[0] <= self.stone_id - 1:
+                inf = (self.x[self.hole_ids[0] - 1], self.y[self.hole_ids[0] - 1])
+            else:
+                inf = (self.x[self.hole_ids[0]], self.y[self.hole_ids[0]])
+            fire1_inf = inf
+            self.fire1trans.set_translation(fire1_inf[0], fire1_inf[1])
+
+            if self.hole_ids[1] <= self.stone_id - 1:
+                inf = (self.x[self.hole_ids[1] - 1], self.y[self.hole_ids[1] - 1])
+            else:
+                inf = (self.x[self.hole_ids[1]], self.y[self.hole_ids[1]])
+            fire2_inf = inf
+            self.fire2trans.set_translation(fire2_inf[0], fire2_inf[1])
+
+            if self.gem_ids[0] <= self.stone_id - 1:
+                inf = (self.x[self.gem_ids[0] - 1], self.y[self.gem_ids[0] - 1])
+            else:
+                inf = (self.x[self.gem_ids[0]], self.y[self.gem_ids[0]])
+            diamond_inf = inf
+
+            self.diamondtrans.set_translation(diamond_inf[0], diamond_inf[1])
 
         self.reset_ = False
+
         if self.state is None:
             return None
-        if self.state <= self.stone_id-1:
+        if self.state <= self.stone_id - 1:
             self.robotrans.set_translation(self.x[self.state - 1], self.y[self.state - 1])
         else:
             self.robotrans.set_translation(self.x[self.state], self.y[self.state])
@@ -350,6 +350,5 @@ class GridEnv2(gym.Env):
         if self.viewer:
             self.viewer.close()
 
-
-#if __name__ == "__main__":
-    #a = GridEnv1()
+# if __name__ == "__main__":
+# a = GridEnv1()
