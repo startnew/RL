@@ -29,11 +29,11 @@
 pip install -r requirements.txt
 ```
    
-   1. First move Custom env code move to  your site-package gym path ``.../anaconda3/Lib/site-packages/gym/envs``
+   1. First move Custom env code move to  your site-package gym path ``/anaconda3/Lib/site-packages/gym/envs``
    ```shell
-   mkdir ../anaconda3/Lib/site-packages/gym/envs/usr
-   cp ./env/grid_findGem_v1.py /anaconda3/Lib/site-packages/gym/envs/usr
-   cp ./env/__init__.py /anaconda3/Lib/site-packages/gym/envs/usr
+   mkdir /anaconda3/Lib/site-packages/gym/envs/user
+   cp ./env/grid_findGem_v1.py /anaconda3/Lib/site-packages/gym/envs/user
+   cp ./env/__init__.py /anaconda3/Lib/site-packages/gym/envs/user
 ```
    
    2.  Registration environment in gym

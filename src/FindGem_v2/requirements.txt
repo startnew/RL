@@ -1,0 +1,8 @@
+tqdm==4.40.2
+imageio==2.5.0
+imageio-ffmpeg==0.3.0
+torch==1.7.0+cu101
+torchvision==0.8.1+cu101
+matplotlib==3.0.3
+numpy==1.19.4
+gym==0.17.3
