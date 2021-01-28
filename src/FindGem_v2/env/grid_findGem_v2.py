@@ -46,57 +46,13 @@ class GridEnv2(gym.Env):
         print("生成出来的t:{}".format(self.t))
         self.gen_rewards()
         print("生成出来的rewards:{}".format(self.rewards))
-        # self.rewards = dict();  # 回报的数据结构为字典
-        # self.rewards['8_s'] = -1.0
-        # self.rewards['13_w'] = -1.0
-        # self.rewards['7_s'] = -1.0
-        # self.rewards['10_e'] = -1.0
-        # self.rewards['14_e'] = 1.0
 
-        # self.t = dict();  # 状态转移的数据格式为字典
-
-        # self.loc_ind_map = dict()
-        #
-        #
-        #
-        # self.t['1_s'] = 5
-        # self.t['1_e'] = 2
-        # self.t['2_w'] = 1
-        # self.t['2_e'] = 3
-        # self.t['3_s'] = 6
-        # self.t['3_w'] = 2
-        # self.t['3_e'] = 4
-        # self.t['4_w'] = 3
-        # self.t['4_s'] = 7
-        # self.t['5_s'] = 8
-        # self.t['5_n'] = 1
-        # self.t['6_n'] = 3
-        # self.t['6_s'] = 10
-        # self.t['6_e'] = 7
-        # self.t['7_w'] = 6
-        # self.t['7_n'] = 4
-        # self.t['7_s'] = 11
-        # self.t['8_n'] = 5
-        # self.t['8_e'] = 9
-        # self.t['8_s'] = 12
-        # self.t['9_w'] = 8
-        # self.t['9_e'] = 10
-        # self.t['9_s'] = 13
-        # self.t['10_w'] = 9
-        # self.t['10_n'] = 6
-        # self.t['10_e'] = 11
-        # self.t['10_s'] = 14
-        # self.t['10_w'] = 9
-        # self.t['13_n'] = 9
-        # self.t['13_e'] = 14
-        # self.t['13_w'] = 12
-        # self.t['14_n'] = 10
-        # self.t['14_e'] = 15
-        # self.t['14_w'] = 13
 
         self.gamma = 0.8  # 折扣因子
         self.viewer = None
         self.state = None
+        self.reset()
+
 
     def gen_t(self):
 
@@ -210,25 +166,24 @@ class GridEnv2(gym.Env):
 
         return next_state, r, is_terminal, {}
 
-    def reset(self):
-        self.hole_ids = random.choices(self.states, k=2)  # 编号 从1 开始
-        # [11, 12]
-        res = list(set(self.states) - set(self.hole_ids))
-        self.gem_ids = [random.choice(res)]  # 编号 从1 开始
-        res = list(set(res) - set(self.gem_ids))
-        self.stone_id = random.choice(res)
-        res = list(set(res) - set([self.stone_id]))
-        self.terminate_states = dict()
-        for id_ in self.hole_ids + self.gem_ids:
-            self.terminate_states[id_] = 1
-        self.state = random.choice(res)  # self.states[int(random.random() * len(self.states))]
-
-        self.gen_t()
-        self.gen_rewards()
-        self.reset_ = True
-        # if self.viewer:
-        # print(help(self.viewer))
-        # self.viewer.clear()
+    def reset(self,sign_force_reset=True):
+        if sign_force_reset: # 是否将所有环境均改变
+            self.hole_ids = random.choices(self.states, k=2)  # 编号 从1 开始
+            # [11, 12]
+            res = list(set(self.states) - set(self.hole_ids))
+            self.gem_ids = [random.choice(res)]  # 编号 从1 开始
+            res = list(set(res) - set(self.gem_ids))
+            self.stone_id = random.choice(res)
+            res = list(set(res) - set([self.stone_id]))
+            self.terminate_states = dict()
+            for id_ in self.hole_ids + self.gem_ids:
+                self.terminate_states[id_] = 1
+            self.state = random.choice(res)  # self.states[int(random.random() * len(self.states))]
+            self.gen_t()
+            self.gen_rewards()
+            self.reset_ = True
+        else:
+            pass
         return self.state
 
     def render(self, mode='human'):
