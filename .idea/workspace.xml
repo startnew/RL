@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52154616-0c1f-4ffd-9113-b7cbc5728773" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LayOutAgent/drawInfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RL.iml" afterDir="false" />
+    <list default="true" id="52154616-0c1f-4ffd-9113-b7cbc5728773" name="Default Changelist" comment="删除html 结果部分">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/src/LayOutAgent/LayOutEnv.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
-              <caret line="293" column="47" lean-forward="true" selection-start-line="293" selection-start-column="47" selection-end-line="293" selection-end-column="47" />
+              <caret line="293" column="47" selection-start-line="293" selection-start-column="47" selection-end-line="293" selection-end-column="47" />
               <folding>
                 <element signature="e#205#219#0" expanded="true" />
                 <element signature="e#1313#1811#0" />
@@ -78,12 +75,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="159" column="30" lean-forward="true" selection-start-line="159" selection-start-column="30" selection-end-line="159" selection-end-column="30" />
+            <state relative-caret-position="483">
+              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
               <folding>
                 <element signature="e#288#302#0" expanded="true" />
-                <element signature="e#2691#4510#0" />
-                <element signature="e#4547#4767#0" />
               </folding>
             </state>
           </provider>
@@ -227,10 +222,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-50" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="height" value="1065" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -244,22 +239,6 @@
             <path>
               <item name="RL" type="b2602c69:ProjectViewProjectNode" />
               <item name="RL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="LayOutAgent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RL" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -435,7 +414,7 @@
       <workItem from="1610588632730" duration="2502000" />
       <workItem from="1611630720677" duration="22037000" />
       <workItem from="1611712008224" duration="877000" />
-      <workItem from="1611714839177" duration="6944000" />
+      <workItem from="1611714839177" duration="9412000" />
     </task>
     <task id="LOCAL-00001" summary="修改反斜杠">
       <created>1609306748716</created>
@@ -493,22 +472,35 @@
       <option name="project" value="LOCAL" />
       <updated>1609921701210</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="LayouOutAgent Single">
+      <created>1611821257676</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611821257676</updated>
+    </task>
+    <task id="LOCAL-00010" summary="删除html 结果部分">
+      <created>1611822503133</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611822503133</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97851000" />
+    <option name="totallyTimeSpent" value="100319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2739872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.07411385" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24274974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -562,7 +554,9 @@
     <MESSAGE value="test code run and modify some error" />
     <MESSAGE value="findGem_v2FirstCommit" />
     <MESSAGE value="findGem_v2 环境修改不用每次重置都关闭viewer" />
-    <option name="LAST_COMMIT_MESSAGE" value="findGem_v2 环境修改不用每次重置都关闭viewer" />
+    <MESSAGE value="LayouOutAgent Single" />
+    <MESSAGE value="删除html 结果部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除html 结果部分" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/anaconda3_201907/Lib/site-packages/numpy/_distributor_init.py">
@@ -756,7 +750,7 @@
     <entry file="file://$PROJECT_DIR$/src/LayOutAgent/LayOutEnv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
-          <caret line="293" column="47" lean-forward="true" selection-start-line="293" selection-start-column="47" selection-end-line="293" selection-end-column="47" />
+          <caret line="293" column="47" selection-start-line="293" selection-start-column="47" selection-end-line="293" selection-end-column="47" />
           <folding>
             <element signature="e#205#219#0" expanded="true" />
             <element signature="e#1313#1811#0" />
@@ -771,12 +765,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FindGem_v2/env/grid_findGem_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="159" column="30" lean-forward="true" selection-start-line="159" selection-start-column="30" selection-end-line="159" selection-end-column="30" />
+        <state relative-caret-position="483">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
           <folding>
             <element signature="e#288#302#0" expanded="true" />
-            <element signature="e#2691#4510#0" />
-            <element signature="e#4547#4767#0" />
           </folding>
         </state>
       </provider>
